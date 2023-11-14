@@ -50,7 +50,6 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    b
 }
 
 .home-content {
@@ -115,7 +114,15 @@ body {
 }
 
 .btn-box a:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
     background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
 }
 
 .btn-box a::before {
